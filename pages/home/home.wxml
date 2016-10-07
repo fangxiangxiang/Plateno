@@ -1,0 +1,47 @@
+<!--轮播图-->
+    <view class="page__bd">
+        <view class="section swiper">
+            <swiper indicator-dots="{{indicatorDots}}" vertical="{{vertical}}"
+                    autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+                <block wx:for-items="{{imgUrls}}">
+                    <swiper-item>
+                        <image src="{{item}}" class="slide-image" style="width:100%"/>
+                    </swiper-item>
+                </block>
+            </swiper>
+        </view>
+    </view>
+<!--酒店详情-->
+    <view wx:for-items="{{list}}">
+		<view class="flex_fa bc_white" bindtap="bindViewTap" style="height: 6rem;border-bottom: solid 1px #e5e5e5;">
+			<view class="pic_box">
+				<image class="picture" src="{{item.imgUrls}}"/>				
+			</view>
+			<view class="flex_son_vertical right_content">
+				<view class="flex_fa flex_son_vertical white" style="height: 117px;box-sizing:border-box;">
+					<view class="flex_son_vertical" style="display: flex;flex:1;">
+						<view class="ellipsis" style="font-size: .92rem;">{{item.title}}</view>
+						<view class="loaction_1">{{item.location}}</view>
+						
+					</view>
+					<view class="view_detail_1">
+						<view class="view_detail_2">
+							<view class="fanyuan" wx:if="{{item.fanyuan}}">房量紧张</view>
+							<view class="message_1 ellipsis" wx:if="{{item.message}}">{{item.message}}</view>
+							<view class="price"><text class="font_point_8">¥ </text>{{item.price}}<text class="font_point_8"> 起</text></view>
+						</view>													
+					</view>					
+					<view class="view_detail_1">
+						<view class="view_detail_2">
+							<view style="font-size: 13px;color: #eb5e18;">{{item.score}}分<span style="color: #999;">({{item.number}})</span></view>
+							<view class="jytj" wx:if="{{item.jytj}}">今夜特价</view>
+							<view class="jifen" wx:if="{{item.integral}}">{{item.integral}}<text>积分</text></view>
+						</view>								
+					</view>
+				</view>
+			</view>
+		</view>
+    </view>
+
+
+

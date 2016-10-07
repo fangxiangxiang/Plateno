@@ -1,0 +1,99 @@
+.swiper-item{
+    display: block;
+    height: 150px;
+}
+.flex-wrp{
+    height: 100px;
+    display:flex;
+    background-color: #FFFFFF;
+}
+.flex-item{
+    width: 100px;
+    height: 100px;
+}
+.fanyuan{
+    color: #fff;
+    background-color: #eb5e18;
+    font-size: 12px;
+    width: 53px;
+    text-align: center;
+}
+.price{
+    color: #eb5e18;
+    font-size: 19px;
+}
+.view_detail_2{
+    display: flex;
+    justify-content:space-between;
+    align-items: flex-end;
+}
+.view_detail_1{
+    display: flex;
+    flex-direction: column-reverse;
+    flex:1;
+}
+.right_content{
+    display: flex;
+    flex:2;
+    padding: .3rem .25rem .4rem .25rem;
+    box-sizing:border-box;
+}
+.flex_fa{
+    width: 100%; 
+    display: -webkit-flex;
+    display: flex; 
+}
+.flex_son{
+    -webkit-flex: 1;
+    flex: 1;
+    display: flex;
+    display: -webkit-flex;
+    flex-direction:column;/*子元素的排列方式(垂直向下)*/
+    -webkit-align-items: center;
+    align-items: center;   /*子元素垂直居中*/
+    justify-content: center;/*水平居中*/
+}
+.flex_son_vertical{
+  flex-direction:column;/*子元素的排列方式(垂直向下)*/
+}
+.ellipsis {
+   text-overflow: ellipsis;
+    white-space: nowrap; 
+}
+.message_1{
+   color: #eb5e18;
+   font-size: .8rem;
+}
+.loaction_1{
+    font-size: .8rem;
+    color:#999;
+}
+.jifen{
+    color: #fff;
+    background-color: #3a9eec;
+    font-size: .8rem;
+    text-align: center;
+}
+.jytj{
+    color:#339DEE;
+    font-size: .7rem;
+    text-align: center;
+    border: 1px solid #339DEE;
+    box-sizing:border-box;
+}
+.pic_box{
+    width: 6rem;
+    height: 6rem;
+    overflow: hidden;
+    position: relative;
+}
+.picture{
+    height: 100%;
+    width: 100%;
+    max-width: none;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    -webkit-transform: translate(-50%,0);
+    transform: translate(-50%,0);
+}

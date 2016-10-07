@@ -1,0 +1,245 @@
+<view class="page">
+    <view class="out_box bg_white">
+        <view class="title_box">
+            <text class="title">麗枫酒店·广州宝岗大道广百新一城店</text>       
+        </view>
+        <view style="text-align:right;">
+            <text class="desc">酒店介绍 ></text>
+        </view>
+    </view>
+    <view class="page__bd">
+            <modal title="酒店政策" no-cancel hidden="{{modalHidden}}" mask bindconfirm="modalChange" bindcancel="modalChange">
+                广交会期间会员预订含早含车接送往返琶洲会馆。
+            </modal>
+            <scroll-view class="scroll-view_H" scroll-x="true" style="width: 100%;"  bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+                <view id="green" class="scroll-view-item_H">
+                    <image src="../images/hotel_detail.jpg" style="height: 5.1rem;width: 5.1rem"/>     
+                </view>
+                <view id="green" class="scroll-view-item_H">
+                    <image src="../images/hotel_detail1.jpg" style="height: 5.1rem;width: 5.1rem"/>     
+                </view>
+                <view id="green" class="scroll-view-item_H">
+                    <image src="../images/hotel_detail2.jpg" style="height: 5.1rem;width: 5.1rem"/>     
+                </view>
+                <view id="green" class="scroll-view-item_H">
+                    <image src="http://images.plateno.com/images/inn/14NGmYzkIV/320" style="height: 5.1rem;width: 5.1rem"/>     
+                </view>
+                <view id="green" class="scroll-view-item_H">
+                    <image src="../images/hotel_detail4.jpg" style="height: 5.1rem;width: 5.1rem"/>     
+                </view>
+                <view id="green" class="scroll-view-item_H">
+                    <image src="../images/hotel_detail5.jpg" style="height: 5.1rem;width: 5.1rem"/>     
+                </view>
+                <view id="green" class="scroll-view-item_H">
+                    <image src="../images/hotel_detail6.jpg" style="height: 5.1rem;width: 5.1rem"/>     
+                </view>                
+            </scroll-view>
+    </view>
+    <view class="location_box bg_white" style="display:flex">
+        <text class="flex_son_1 location">宝岗大道269号蓝宝大厦北塔4楼（宝岗大道与南田路路口）</text>
+        <form bindsubmit="openLocation">
+            <input class="page-body-form-value" value="{{longitude}}" name="longitude" style="display:none;"></input>
+            <input class="page-body-form-value" value="{{latitude}}" name="latitude" style="display:none;"></input>
+            <button formType="submit" class="location_img" src="http://m.plateno.com/images/detail/icon-mapbg.png"/>
+        </form>
+       
+    </view>
+    <view class="comment_policy bg_white" style="display:flex;">
+        <view class="flex_son">客人点评</view>
+        <view class="flex_son" style="color:red">超级棒,4.9分</view>
+        <view class="flex_son">(2606人点评)</view>
+        <view class="flex_son_1 flex_son_y_m flex_son_x_b" style="align-items: bottom;">
+            <view class="icon-back" style="margin-right:1.2rem"></view>
+        </view>
+    </view>
+    <view class="comment_policy bg_white" bindtap="modalTap" style="display:flex;">
+        <view class="flex_son">酒店政策</view>
+        <view class="flex_son_2 flex_son_y_m flex_son_x_m">广交会期间会员预订含早含车接送往返琶洲会馆。</view>
+        <view class="flex_son_1 flex_son_y_m flex_son_x_b" style="align-items: bottom;">
+            <view class="icon-back" style="margin-right:1.2rem"></view>
+        </view>
+    </view>
+    <view class="comment_policy bg_white" style="display:flex;margin-top:.8rem;">
+        <view class="flex_son">
+            <view class="data_bg"></view>
+        </view>
+        <view class="orders-date flex_son_3 flex_son_y_m">10月01日 - 10月02日</view>
+        <view class="checkIn-time flex_son_1 flex_son_y_m flex_son_x_b">住1晚</view>
+        <view class="flex_son_1 flex_son_y_m flex_son_x_b" style="align-items: bottom;">
+            <view class="icon-back" style="margin-right:1.2rem"></view>
+        </view>
+    </view>
+    <view class="room_detail bg_white" bindtap="showdetail" style="display:flex">
+        <view class="flex_son_2 flex_son_x_m">
+            <image src="../images/hotel_detail1.jpg" style="height: 4rem;width: 4rem"/>
+        </view>
+        <view class="flex_son_2 flex_son_x_m flex_son_vertical">
+            <text class="room_name">标准单人房</text>
+            <text class="bed_window">大床  有窗</text>
+        </view>
+        <view class="flex_son_x_m flex_son_vertical flex_son_2">
+            <view class="price flex_son_x_b flex_son_y_b" style="display:flex;height:2rem;">
+                <text class="font_point_8">¥</text>
+                <text>280</text>
+                <text class="font_point_8 text_indent">起</text>
+            </view>
+            <view class="font_point_8 flex_son_x_b flex_son_2">
+               <text class="market_title">门市价</text>
+               <text class="market_price">¥415</text>
+            </view>
+         </view>
+        <view class="flex_son_1 flex_son_y_m flex_son_x_b" style="align-items: bottom;">
+            <view class="icon-back" style="margin-right:1.2rem"></view>
+        </view>      
+    </view>
+    <view class="order_detail_box" wx:if="{{showdetail}}">
+        <view class="order_detail" style="display:flex">
+            <view class="flex_son_2 flex_son_x_m flex_son_vertical font_point_8">
+                <text>预付立减</text>
+                <view style="line-height:1.4rem;">
+                    <text class="price_bg">送280积分</text>
+                </view>
+            </view>
+            <view class="flex_son_1 flex_son_y_m flex_son_x_b price">
+                <text class="font_point_8">¥</text>
+                <text>280</text>
+            </view>
+            <view class="flex_son">
+                <view style="display:flex">
+                    <view class="flex_son">
+                        <text class="order_top">订</text>
+                        <text class="order_down">预付</text>
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view class="order_detail" style="display:flex">
+            <view class="flex_son_2 flex_son_x_m flex_son_vertical font_point_8">
+                <text>到付价</text>
+                <view style="line-height:1.4rem;">
+                    <text class="price_bg">送300积分</text>
+                </view>
+            </view>
+            <view class="flex_son_1 flex_son_y_m flex_son_x_b price">
+                <text class="font_point_8">¥</text>
+                <text>300</text>
+            </view>
+            <view class="flex_son">
+                <view style="display:flex">
+                    <view class="flex_son">
+                        <text class="order_only">订</text>
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view class="order_detail" style="display:flex">
+            <view class="flex_son_2 flex_son_x_m flex_son_vertical font_point_8">
+                <text>预付价</text>
+                <view style="line-height:1.4rem;">
+                    <text class="price_bg">送600积分</text>
+                </view>
+            </view>
+            <view class="flex_son_1 flex_son_y_m flex_son_x_b price">
+                <text class="font_point_8">¥</text>
+                <text>300</text>
+            </view>
+            <view class="flex_son">
+                <view style="display:flex">
+                    <view class="flex_son">
+                       <text class="order_top">订</text>
+                    <text class="order_down">预付</text>
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view class="order_detail" style="display:flex">
+            <view class="flex_son_2 flex_son_x_m flex_son_vertical font_point_8">
+                <text>特惠价</text>
+                <view style="line-height:1.4rem;">
+                    <text class="price_bg">送251积分</text>
+                </view>
+            </view>
+            <view class="flex_son_1 flex_son_y_m flex_son_x_b price">
+                <text class="font_point_8">¥</text>
+                <text>251</text>
+            </view>
+            <view class="flex_son">
+                <view style="display:flex">
+                    <view class="flex_son">
+                        <text class="order_full">满</text>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+    
+    <view class="room_detail bg_white" style="display:flex">
+        <view class="flex_son_2 flex_son_x_m">
+            <image src="../images/hotel_detail1.jpg" style="height: 4rem;width: 4rem"/>
+        </view>
+        <view class="flex_son_2 flex_son_x_m flex_son_vertical">
+            <text class="room_name">标准单人房</text>
+            <text class="bed_window">大床  有窗</text>
+        </view>
+        <view class="flex_son_x_m flex_son_vertical flex_son_2">
+            <view class="price flex_son_x_b flex_son_y_b" style="display:flex;height:2rem;">
+                <text class="font_point_8">¥</text>
+                <text>280</text>
+                <text class="font_point_8 text_indent">起</text>
+            </view>
+            <view class="font_point_8 flex_son_x_b flex_son_2">
+               <text class="market_title">门市价</text>
+               <text class="market_price">¥415</text>
+            </view>
+         </view>
+        <view class="flex_son_1 flex_son_y_m flex_son_x_b" style="align-items: bottom;">
+            <view class="icon-back" style="margin-right:1.2rem"></view>
+        </view>      
+    </view>
+        <view class="room_detail bg_white" style="display:flex">
+        <view class="flex_son_2 flex_son_x_m">
+            <image src="../images/hotel_detail1.jpg" style="height: 4rem;width: 4rem"/>
+        </view>
+        <view class="flex_son_2 flex_son_x_m flex_son_vertical">
+            <text class="room_name">标准单人房</text>
+            <text class="bed_window">大床  有窗</text>
+        </view>
+        <view class="flex_son_x_m flex_son_vertical flex_son_2">
+            <view class="price flex_son_x_b flex_son_y_b" style="display:flex;height:2rem;">
+                <text class="font_point_8">¥</text>
+                <text>280</text>
+                <text class="font_point_8 text_indent">起</text>
+            </view>
+            <view class="font_point_8 flex_son_x_b flex_son_2">
+               <text class="market_title">门市价</text>
+               <text class="market_price">¥415</text>
+            </view>
+         </view>
+        <view class="flex_son_1 flex_son_y_m flex_son_x_b" style="align-items: bottom;">
+            <view class="icon-back" style="margin-right:1.2rem"></view>
+        </view>      
+    </view>
+        <view class="room_detail bg_white" style="display:flex">
+        <view class="flex_son_2 flex_son_x_m">
+            <image src="../images/hotel_detail1.jpg" style="height: 4rem;width: 4rem"/>
+        </view>
+        <view class="flex_son_2 flex_son_x_m flex_son_vertical">
+            <text class="room_name">标准单人房</text>
+            <text class="bed_window">大床  有窗</text>
+        </view>
+        <view class="flex_son_x_m flex_son_vertical flex_son_2">
+            <view class="price flex_son_x_b flex_son_y_b" style="display:flex;height:2rem;">
+                <text class="font_point_8">¥</text>
+                <text>280</text>
+                <text class="font_point_8 text_indent">起</text>
+            </view>
+            <view class="font_point_8 flex_son_x_b flex_son_2">
+               <text class="market_title">门市价</text>
+               <text class="market_price">¥415</text>
+            </view>
+         </view>
+        <view class="flex_son_1 flex_son_y_m flex_son_x_b" style="align-items: bottom;">
+            <view class="icon-back" style="margin-right:1.2rem"></view>
+        </view>      
+    </view>   
+</view>

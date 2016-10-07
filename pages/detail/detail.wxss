@@ -1,0 +1,156 @@
+.scroll-view_H{
+    white-space: nowrap;
+}
+.scroll-view-item{
+    height: 5.1rem;
+}
+.scroll-view-item_H{
+    display: inline-block;
+    width: 5.1rem;
+    height: 5.1rem;
+}
+.out_box{
+    padding: .5rem .2rem .4rem .2rem
+}
+.title_box{
+    padding: .2rem .3rem .2rem .3rem;
+}
+.title{
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    margin-right: .4rem;
+}
+.desc{
+    color: #888888;
+    text-align: right;
+    font-size: .7rem;
+    margin-right: .5rem;
+}
+.location_box{
+    padding: .4rem .5rem .6rem .4rem;
+    border-bottom: .1px solid #EEEEEE;
+}
+.location{
+    font-size: .85rem;
+}
+.location_img{
+    height:1.9rem;
+    width:1rem;
+    margin: 0 .4rem;
+    background: url("http://m.plateno.com/images/detail/icon-mapbg.png") no-repeat;
+    background-size: 50%;
+    text-align: center;
+}
+.icon-back{
+    width: .4rem;
+    height: .81rem; 
+    background: url("http://m.plateno.com/images/detail/back_hui.png") no-repeat;
+    background-size: 100%;
+}
+.comment_policy{
+    padding: .4rem 0;
+    font-size: .83rem;
+    height: 2rem;
+    border-bottom: .1px solid #EEEEEE;
+}
+.icon-date {
+    background-position: -0.9rem -0.72rem;
+    width: 1.16rem;
+    height: 1.00rem;
+}
+.detail-icon{
+    background: url("http://m.plateno.com/images/detail/detail-icon.png") no-repeat;
+    background-size: 4.31rem 3.95rem;
+}
+.data_bg{
+    background: url("../images/data.png") no-repeat;
+    background-size: 1rem 1rem;
+    width: 1rem;
+    height: 1rem;
+}
+.room_detail{
+    padding: .4rem 0;
+    font-size: .83rem;
+    height: 4rem;
+    border-bottom: .1px solid #EEEEEE;
+}
+.room_name{
+    font-size: .9rem;
+    line-height: 1.5rem;
+}
+.bed_window{
+    color: #999;
+    line-height: 1.5rem;
+}
+.order_detail{
+    height: 3.8rem;
+    padding-left: .7rem;
+    border-bottom: 1px solid #ECECEC;
+}
+.order_detail_box{
+    
+}
+.price_bg{
+    background-color: #339bef;
+    color: #fff;
+}
+.order_only{
+    width:2.4rem;
+    height: 2.1rem;
+    background-color: #eb5e18;
+    color: #fff;
+    border-radius: .3rem;
+    border: 1px solid #eb5e18;
+    text-align: center;
+    line-height: 2.1rem;
+    font-family: arial, sans-serif;
+}
+.order_full{
+    width:2.4rem;
+    height: 2.1rem;
+    background-color: #999;
+    color: #fff;
+    border-radius: .3rem;
+    border: 1px solid #ECECEC;
+    text-align: center;
+    line-height: 2.1rem;
+    font-family: arial, sans-serif;
+}
+.market_title{
+    line-height:2rem;
+    color: #999;
+}
+.market_price{
+    line-height:2rem;
+    color: #999;
+    text-decoration: line-through;
+    text-indent: .45rem;
+}
+.text_indent{
+    text-indent: .15rem;
+}
+.order_top{
+    width:2.4rem;
+    height: 1.3rem;
+    background-color: #eb5e18;
+    color: #fff;
+    border-top-left-radius: .3rem;
+    border-top-right-radius: .3rem;
+    text-align: center;
+    line-height: 1.3rem;
+    border: 1px solid #eb5e18;
+    font-family: arial, sans-serif;
+}
+.order_down{
+    width: 2.4rem;
+    height: 0.8rem;
+    font-size: .6rem;
+    line-height: 0.8rem;
+    text-align: center;
+    background-color: #fff;
+    color: #eb5e18;
+    border-bottom-left-radius: .3rem;
+    border-bottom-right-radius: .3rem;
+    font-family: arial, sans-serif;
+}
