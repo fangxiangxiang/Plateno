@@ -11,4 +11,4 @@
 ####调用腾讯地图API
 ![效果图](http://fangxx.org/demo/6.png)
 
-<a href="http://fangxx.org/demo/plateno.gif" target="_blank">代码gif预览(估计要加载一段时间)</a>  
+<a href="http://fangxx.org/demo/plateno.gif" target="_blank">在线gif预览(估计要加载一段时间)</a>  
